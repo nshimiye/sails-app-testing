@@ -1,0 +1,107 @@
+{
+  "data": {
+    "dailyjoke": [
+      {
+        "content": "Never test the depth of the water with both feet.",
+        "author": "kids",
+        "source": "https://github.com/faiyaz26/one-liner-joke",
+        "user": 5,
+        "createdAt": "2016-12-20T20:18:16.928Z",
+        "updatedAt": "2016-12-20T20:18:16.928Z",
+        "id": 1
+      },
+      {
+        "content": "A procrastinator's work is never done.",
+        "author": "life",
+        "source": "https://github.com/faiyaz26/one-liner-joke",
+        "user": 5,
+        "createdAt": "2016-12-20T20:22:32.638Z",
+        "updatedAt": "2016-12-20T20:22:32.638Z",
+        "id": 2
+      },
+      {
+        "content": "According to the second law of thermodynamics, you're supposed to share your hotness with me.",
+        "author": "life",
+        "source": "https://github.com/faiyaz26/one-liner-joke",
+        "user": 5,
+        "createdAt": "2016-12-20T20:22:34.513Z",
+        "updatedAt": "2016-12-20T20:22:34.513Z",
+        "id": 3
+      }
+    ],
+    "user": [
+      {
+        "name": "mars",
+        "username": "mars@fusemachines.com",
+        "createdAt": "2016-12-20T20:17:59.418Z",
+        "updatedAt": "2016-12-20T20:22:34.503Z",
+        "id": 5
+      }
+    ]
+  },
+  "schema": {
+    "dailyjoke": {
+      "content": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      },
+      "source": {
+        "type": "string"
+      },
+      "meta": {
+        "type": "json"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "username": {
+        "type": "string"
+      },
+      "meta": {
+        "type": "json"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "dailyjoke": {
+      "id": 3
+    },
+    "user": {
+      "id": 5
+    }
+  }
+}

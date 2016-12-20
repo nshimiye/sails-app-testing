@@ -19,7 +19,6 @@
  * For more information on configuring custom routes, check out:
  * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTargetSyntax.html
  */
-
 module.exports.routes = {
 
   /***************************************************************************
@@ -34,8 +33,12 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  
+  'GET /user/:id/dailyJoke': {
+    controller: 'UserController',
+    action: 'dailyJoke'
   }
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

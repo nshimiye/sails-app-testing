@@ -16,3 +16,29 @@ Create a test (unit and acceptence) to make sure that
 * Look at [sails-record-list tutorial](https://github.com/nshimiye/sails-record-list) to finish up the app logic
  * save user info that includes email
  * add/fetch joke for the user
+
+* Add a `tests` folder
+```sh
+mkdir tests
+```
+
+* Create a structure
+```sh
+tests
+|- unit # testing a function/method as it is (same input give out same output)
+| |- controllers
+| |- models
+| |- policies
+| |- services
+| | |- DailyJokeService.test.js
+| | |- UtilityService.test.js
+|- integration # testing the behavior of a function when placed in a given environment (ex: action handler defined in the controller)
+| |- controllers
+| | |- UserController.test.js
+| |- models
+| |- policies
+| |- services
+| | |- DatabaseAccessService.test.js
+```
+
+*
