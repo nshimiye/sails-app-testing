@@ -17,15 +17,15 @@ Create a test (unit and acceptence) to make sure that
  * save user info that includes email
  * add/fetch joke for the user
 
-* Add a `tests` folder
+* Add a `test` folder
 ```sh
-mkdir tests
+mkdir test
 ```
 
-* Create a structure
+* Add the rest a structure
 ```sh
 <app>/api
-|- test # mocha default tisting folder
+|- test # mocha default testing folder
 | |- mocha.opts
 | |- unit # testing a function/method as it is (same input give out same output)
 | | |- controllers

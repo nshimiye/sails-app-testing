@@ -15,38 +15,32 @@ describe('UserController', function () {
 
     const name = 'mars', username = 'mars@fusemachines.com';
     it('Should create a new user object - send GET request', function (done) {
-            request(sails.hooks.http.app)
-            .get(`/user/create?name=${name}&username=${username}`)
-            .expect(201) // 
-            .end(function (err, res) {
-                if (err) return done(err);
-                
-                sails.log.debug('---<>--- START ---<>---');
-                sails.log.debug(res.body);
-                sails.log.debug('---<>--- END   ---<>---');
+        request(sails.hooks.http.app)
+        .get(`/user/create?name=${name}&username=${username}`)
+        .expect(201) // 
+        .end(function (err, res) {
 
-                should.exist(res.body);
+            if (err) { return done(err); }
+            should.equal(res.body.name, name, `Name should be ${name}`);
+            should.equal(res.body.username, username, `Username should be ${username}`);
+            done();
 
-                done();
-            });
+        });
     });
 
     it('Should create a new user object - send POST request', function (done) {
         request(sails.hooks.http.app)
-            .post(`/user/create`)
-            .send({ name, username })
-            .expect(201) // 
-            .end(function (err, res) {
-                if (err) return done(err);
-                
-                sails.log.debug('---<>--- START ---<>---');
-                sails.log.debug(res.body);
-                sails.log.debug('---<>--- END   ---<>---');
+        .post(`/user/create`)
+        .send({ name, username })
+        .expect(201) // 
+        .end(function (err, res) {
 
-                should.exist(res.body);
+            if (err) { return done(err); }
+            should.equal(res.body.name, name, `Name should be ${name}`);
+            should.equal(res.body.username, username, `Username should be ${username}`);
+            done();
 
-                done();
-            });
+        });
     });
     
 });
