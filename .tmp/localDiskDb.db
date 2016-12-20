@@ -1,41 +1,20 @@
 {
   "data": {
-    "dailyjoke": [
-      {
-        "content": "Never test the depth of the water with both feet.",
-        "author": "kids",
-        "source": "https://github.com/faiyaz26/one-liner-joke",
-        "user": 5,
-        "createdAt": "2016-12-20T20:18:16.928Z",
-        "updatedAt": "2016-12-20T20:18:16.928Z",
-        "id": 1
-      },
-      {
-        "content": "A procrastinator's work is never done.",
-        "author": "life",
-        "source": "https://github.com/faiyaz26/one-liner-joke",
-        "user": 5,
-        "createdAt": "2016-12-20T20:22:32.638Z",
-        "updatedAt": "2016-12-20T20:22:32.638Z",
-        "id": 2
-      },
-      {
-        "content": "According to the second law of thermodynamics, you're supposed to share your hotness with me.",
-        "author": "life",
-        "source": "https://github.com/faiyaz26/one-liner-joke",
-        "user": 5,
-        "createdAt": "2016-12-20T20:22:34.513Z",
-        "updatedAt": "2016-12-20T20:22:34.513Z",
-        "id": 3
-      }
-    ],
+    "dailyjoke": [],
     "user": [
       {
         "name": "mars",
         "username": "mars@fusemachines.com",
-        "createdAt": "2016-12-20T20:17:59.418Z",
-        "updatedAt": "2016-12-20T20:22:34.503Z",
-        "id": 5
+        "createdAt": "2016-12-20T21:53:46.973Z",
+        "updatedAt": "2016-12-20T21:53:46.973Z",
+        "id": 15
+      },
+      {
+        "name": "mars",
+        "username": "mars@fusemachines.com",
+        "createdAt": "2016-12-20T21:53:47.092Z",
+        "updatedAt": "2016-12-20T21:53:47.092Z",
+        "id": 16
       }
     ]
   },
@@ -101,7 +80,7 @@
       "id": 3
     },
     "user": {
-      "id": 5
+      "id": 16
     }
   }
 }
