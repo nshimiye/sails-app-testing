@@ -51,8 +51,20 @@ npm install should --save-dev
 
 * create a test - user can be created using **/user/create** api
 
+* add mocha configuration values inside `mocha.opts`
+```sh
+# /test/mocha.opts
+--timeout 20s
+test/bootstrap.test.js
+```
+
+* Add a testing script inside `package.json`
+```json
+"test": "istanbul cover node_modules/.bin/_mocha -- -- test/integration/controllers/**/*.test.js"
+```
+
 * run the test
 ```
-npm install -g mocha
+npm install -g mocha istanbul
 npm test
 ```
